@@ -38,11 +38,12 @@ Route::put('/Categories/{id}','CategorieController@update');
 Route::delete('/Categories/{id}','CategorieController@destroy');
 Route::get('/Users/{id}/edit','UserController@edit');
 Route::put('/Users/{id}','UserController@update');
-Route::get('/AddPanier','PanierController@index');
+//Route::get('/AddPanier','PanierController@index');
 Route::get('/Users','UserController@index');
 Route::get('/charts', function(){
     return view('Profiles.charts');
 });
-Route::get('/Orders', '');
+Route::get('/Orders', 'CommandeController@index');
+Route::get('/Suppliers', 'SupplierController@index');
 Auth::routes();
 

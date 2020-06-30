@@ -14,18 +14,17 @@
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>PRODUCT_ID</th>
-                      <th>USER_ID</th>
-                      <th>TOTAL</th>
+                      <th>NAME</th>
+                      <th>TYPE</th>
+                      <th>ACTIONS</th>
                     </tr>
                   </thead>
                 <tbody>
-                    @foreach($Orders as $Order)
+                    @foreach($Suppliers as $Supplier)
                     <tr>
                       <td>{{$Order->id}}</td>
-                      <td>{{$Order->product_id}}</td>
-                      <td>{{$Product->user_id}}</td>
-                      <td>{{$Product->total}}</td>
+                      <td>{{$Order->name}}</td>
+                      <td>{{$Product->type}}</td>
                     @endforeach
                 </tbody>
                 </table>

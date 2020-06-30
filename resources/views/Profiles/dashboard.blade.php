@@ -111,6 +111,20 @@
           </div>
         </div>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Suppliers" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fab fa-product-hunt"></i>
+          <span>Suppliers</span>
+        </a>
+        <div id="Suppliers" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Suppliers</h6>
+            <a class="collapse-item" href="{{url('/Suppliers')}}">Tout</a>
+            <a class="collapse-item" href="{{url('/Orders')}}">Tout</a>
+          </div>
+        </div>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
 
